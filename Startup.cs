@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -45,6 +46,12 @@ namespace LandonApi
                 options.ReportApiVersions = true;
                 options.ApiVersionSelector = new CurrentImplementationApiVersionSelector(options);
             });
+
+            //allows any api with different origin (for example http call from https://example.com to api https://api.example.com); for test purposes only
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAnyApp", policy => policy.AllowAnyOrigin());
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -61,6 +68,8 @@ namespace LandonApi
 
             //Commented as we use RequireHttpsOrCloseAttribute
             //app.UseHttpsRedirection();
+
+            app.UseCors("AllowAnyApp");
 
             app.UseMvc();
         }
