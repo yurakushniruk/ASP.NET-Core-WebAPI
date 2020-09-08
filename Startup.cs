@@ -15,6 +15,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
+using LandonApi.Services;
+using AutoMapper;
+using LandonApi.Infrastructure;
 
 namespace LandonApi
 {
@@ -32,7 +35,10 @@ namespace LandonApi
         {
             services.Configure<HotelInfo>(Configuration.GetSection("Info"));
 
+            services.AddScoped<IRoomService, DefaultRoomService>();
+
             // Use in-memory database for quick dev and testing 
+            // TODO: Swap out for real database in production
             services.AddDbContext<HotelApiDbContext>(
                 options => options.UseInMemoryDatabase("landondb"));
 
@@ -60,6 +66,9 @@ namespace LandonApi
             {
                 options.AddPolicy("AllowAnyApp", policy => policy.AllowAnyOrigin());
             });
+
+            services.AddAutoMapper(
+                options => options.AddProfile<MappingProfile>());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

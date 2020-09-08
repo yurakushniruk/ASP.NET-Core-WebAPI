@@ -27,10 +27,10 @@ C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\bin\Debug
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.csprojAssemblyReference.cache
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.AssemblyInfoInputs.cache
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.AssemblyInfo.cs
-C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.csproj.CoreCompileInputs.cache
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.RazorAssemblyInfo.cache
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.RazorAssemblyInfo.cs
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.RazorTargetAssemblyInfo.cache
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.dll
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.pdb
 C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.genruntimeconfig.cache
+C:\Users\Yura\Source\Repos\yurakushniruk\ASP.NET-Core-WebAPI\LandonApi\obj\Debug\netcoreapp2.1\LandonApi.csproj.CoreCompileInputs.cache
