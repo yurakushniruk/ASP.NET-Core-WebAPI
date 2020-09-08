@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
 
 namespace LandonApi
 {
@@ -30,6 +31,10 @@ namespace LandonApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<HotelInfo>(Configuration.GetSection("Info"));
+
+            // Use in-memory database for quick dev and testing 
+            services.AddDbContext<HotelApiDbContext>(
+                options => options.UseInMemoryDatabase("landondb"));
 
             services
                 .AddMvc(options=> 
