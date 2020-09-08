@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RhMUYy0KRuvGYhhQ6gPs8up1h9KUkfMAq/M3ppT9/oZdhperfzcL7G//dwg2wTMIC0+bZV1WqL3l1y3eCidOVg==",
+  "dgSpecHash": "HPGVPAbdI+yo/SFc4eZ7sGsVz53W3W5UQ6MO7wSUcpxyE4CJcxx0114W+9dkv1PAlG87Xru3ShFYqKnyGvasVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Yura\\Desktop\\Exercise Files\\Ch02\\02_01\\End\\LandonApi\\LandonApi.csproj",
+  "projectFilePath": "C:\\Users\\Yura\\Source\\Repos\\yurakushniruk\\ASP.NET-Core-WebAPI\\LandonApi\\LandonApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Yura\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Yura\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
