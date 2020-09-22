@@ -11,7 +11,6 @@ namespace LandonApi.Filters
     {
         protected override void HandleNonHttpsRequest(AuthorizationFilterContext filterContext)
         {
-            //Normally RequireHttps redirect http to https, but we can change this behaviour here 
             filterContext.Result = new StatusCodeResult(400);
         }
     }
